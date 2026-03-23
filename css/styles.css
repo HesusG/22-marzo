@@ -841,18 +841,69 @@ a:hover { text-decoration: underline; }
   width: 100%;
 }
 
-.tl-card h4 {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--accent);
+.tl-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   margin-bottom: 4px;
 }
 
-.tl-card .tl-date {
+.tl-title-input {
+  flex: 1;
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--accent);
+  background: transparent;
+  border: none;
+  border-bottom: 2px dashed var(--border-light);
+  padding: 4px 2px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.tl-title-input:focus {
+  border-bottom-color: var(--accent);
+}
+
+.tl-date-input {
   font-family: var(--font-heading);
   font-size: 12px;
   color: var(--text-secondary);
+  background: transparent;
+  border: none;
+  border-bottom: 2px dashed var(--border-light);
+  padding: 4px 2px;
   margin-bottom: 12px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.tl-date-input:focus {
+  border-bottom-color: var(--accent);
+}
+
+.tl-delete-btn {
+  background: var(--bg-secondary);
+  border: var(--border);
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--text-secondary);
+  padding: 0;
+  flex-shrink: 0;
+  transition: all 0.15s;
+}
+
+.tl-delete-btn:hover {
+  background: var(--accent);
+  color: var(--white);
 }
 
 .tl-card textarea {
