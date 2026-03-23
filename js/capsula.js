@@ -4,9 +4,9 @@
 
 (function() {
   const capsulas = [
-    { id: '1y', label: '1 Ano', years: 1, openDate: '2027-03-22' },
-    { id: '3y', label: '3 Anos', years: 3, openDate: '2029-03-22' },
-    { id: '5y', label: '5 Anos', years: 5, openDate: '2031-03-22' },
+    { id: '1y', label: '1 Año', years: 1, openDate: '2027-03-22' },
+    { id: '3y', label: '3 Años', years: 3, openDate: '2029-03-22' },
+    { id: '5y', label: '5 Años', years: 5, openDate: '2031-03-22' },
   ];
 
   function render() {

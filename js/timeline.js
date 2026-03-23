@@ -13,10 +13,10 @@
     { date: "2025-09", title: "De vuelta a la rutina", icon: "\uD83D\uDCDA" },
     { date: "2025-10", title: "Otono", icon: "\uD83C\uDF42" },
     { date: "2025-11", title: "Primer Dia de Muertos juntos", icon: "\uD83C\uDF3A" },
-    { date: "2025-12", title: "Navidad y Ano Nuevo", icon: "\uD83C\uDF84" },
-    { date: "2026-01", title: "Nuevo ano, mismo amor", icon: "\uD83C\uDF89" },
+    { date: "2025-12", title: "Navidad y Año Nuevo", icon: "\uD83C\uDF84" },
+    { date: "2026-01", title: "Nuevo año, mismo amor", icon: "\uD83C\uDF89" },
     { date: "2026-02", title: "San Valentin", icon: "\uD83D\uDC98" },
-    { date: "2026-03", title: "1 Ano Juntos!", icon: "\uD83C\uDF82" },
+    { date: "2026-03", title: "1 Año Juntos!", icon: "\uD83C\uDF82" },
   ];
 
   function getMilestones() {

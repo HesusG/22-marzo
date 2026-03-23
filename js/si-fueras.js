@@ -10,7 +10,7 @@
     { front: "Si fueras una comida...", icon: "\uD83C\uDF73" },
     { front: "Si fueras un animal...", icon: "\uD83E\uDD81" },
     { front: "Si fueras una pelicula...", icon: "\uD83C\uDFAC" },
-    { front: "Si fueras una estacion del ano...", icon: "\u2600\uFE0F" },
+    { front: "Si fueras una estación del año...", icon: "\u2600\uFE0F" },
     { front: "Si fueras un superpoder...", icon: "\u26A1" },
   ];
 
