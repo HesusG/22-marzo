@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stephania & Hesus - 1 Ano Juntos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============================================================= -->
+<!-- NAVIGATION                                                      -->
+<!-- ============================================================= -->
+<nav id="main-nav">
+  <div class="nav-inner">
+    <button class="nav-btn active" data-section="home">Inicio</button>
+    <button class="nav-btn" data-section="agenda">Agenda</button>
+    <button class="nav-btn" data-section="ruleta">Ruleta</button>
+    <button class="nav-btn" data-section="carta">Carta</button>
+    <button class="nav-btn" data-section="si-fueras">Si fueras...</button>
+    <button class="nav-btn" data-section="timeline">Timeline</button>
+    <button class="nav-btn" data-section="capsula">Capsula</button>
+    <button class="nav-btn" data-section="album">Album</button>
+  </div>
+</nav>
+
+<!-- ============================================================= -->
+<!-- SECTION: HOME                                                   -->
+<!-- ============================================================= -->
+<section id="section-home" class="page active">
+  <div class="home-hero">
+    <div class="floating-hearts" aria-hidden="true">
+      <span class="heart h1">&#10084;</span>
+      <span class="heart h2">&#10084;</span>
+      <span class="heart h3">&#10084;</span>
+      <span class="heart h4">&#10084;</span>
+      <span class="heart h5">&#10084;</span>
+      <span class="heart h6">&#10084;</span>
+      <span class="heart h7">&#10084;</span>
+      <span class="heart h8">&#10084;</span>
+    </div>
+    <div class="home-content">
+      <div class="big-heart-pulse">&#10084;</div>
+      <h1 class="couple-names">Stephania <span class="amp">&</span> Hesus</h1>
+      <div class="badge-date neo-badge">22 de Marzo &middot; 1 Ano Juntos</div>
+      <p class="home-text">Un ano de risas, de aprendizaje, de amor que crece cada dia. Esta noche celebramos todo lo que hemos construido juntos y todo lo que nos espera.</p>
+      <button class="neo-btn neo-btn-primary home-cta" onclick="navigateTo('agenda')">Comenzar nuestra aventura</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- SECTION: AGENDA                                                 -->
+<!-- ============================================================= -->
+<section id="section-agenda" class="page">
+  <div class="container">
+    <h2 class="section-title">Agenda de la Noche</h2>
+    <p class="section-desc">Nuestra hoja de ruta para esta noche especial</p>
+
+    <div class="agenda-timeline">
+
+      <div class="agenda-item">
+        <div class="agenda-time">
+          <span class="time-badge neo-badge">8:00 PM</span>
+          <span class="time-range">a 8:40 PM</span>
+        </div>
+        <div class="agenda-card neo-card card-pink">
+          <h3>CENA / BRINDIS</h3>
+          <ul>
+            <li>Saludarnos</li>
+            <li>Palabras por el aniversario (cada quien)</li>
+            <li>Comer mientras vemos o escuchamos algo romantico</li>
+            <li><a href="#" onclick="navigateTo('ruleta'); return false;" class="agenda-link">Ruleta de preguntas</a></li>
+            <li>Brindis de aniversario</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-time">
+          <span class="time-badge neo-badge">8:50 PM</span>
+          <span class="time-range">a 9:30 PM</span>
+        </div>
+        <div class="agenda-card neo-card card-purple">
+          <h3>FOTOS</h3>
+          <ul>
+            <li>Ver y seleccionar fotos (Drive)</li>
+            <li>Tomarnos fotos en Zoom</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-time">
+          <span class="time-badge neo-badge">9:35 PM</span>
+          <span class="time-range">a 9:40 PM</span>
+        </div>
+        <div class="agenda-card neo-card card-coral">
+          <h3>POSTRE & BRINDIS</h3>
+          <ul>
+            <li>Segundo brindis</li>
+            <li>Postre</li>
+            <li><a href="#" onclick="navigateTo('timeline'); return false;" class="agenda-link">Linea del tiempo</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-time">
+          <span class="time-badge neo-badge">9:50 PM</span>
+        </div>
+        <div class="agenda-card neo-card card-gold">
+          <h3>VIDEO</h3>
+          <ul>
+            <li>Momento para grabar un video tipo TikTok</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="agenda-item">
+        <div class="agenda-time">
+          <span class="time-badge neo-badge">10:10 PM</span>
+        </div>
+        <div class="agenda-card neo-card card-accent">
+          <h3>CARTAS & CAPSULA</h3>
+          <ul>
+            <li><a href="#" onclick="navigateTo('carta'); return false;" class="agenda-link">Carta desde el futuro</a> (imaginarnos 10 anos en el futuro)</li>
+            <li><a href="#" onclick="navigateTo('capsula'); return false;" class="agenda-link">Capsula del tiempo</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="agenda-extras">
+      <h3>Dinamicas extras para la noche</h3>
+      <div class="extras-grid">
+        <button class="neo-btn neo-btn-outline" onclick="navigateTo('si-fueras')">Si fueras...</button>
+        <button class="neo-btn neo-btn-outline" onclick="navigateTo('album')">Album de Futuros</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- SECTION: RULETA                                                 -->
+<!-- ============================================================= -->
+<section id="section-ruleta" class="page">
+  <div class="container">
+    <h2 class="section-title">Ruleta de Preguntas</h2>
+    <p class="section-desc">Gira la ruleta y responde con el corazon</p>
+
+    <div class="ruleta-wrapper">
+      <div class="wheel-container">
+        <div class="wheel-pointer"></div>
+        <canvas id="ruleta-canvas"></canvas>
+      </div>
+      <button class="neo-btn neo-btn-primary spin-btn" id="spin-btn">Girar</button>
+    </div>
+
+    <div id="ruleta-result" class="ruleta-result hidden">
+      <div class="result-card neo-card">
+        <h3 id="result-category"></h3>
+        <textarea id="result-answer" class="neo-input" rows="4" placeholder="Escribe tu respuesta..."></textarea>
+        <div class="result-actions">
+          <button class="neo-btn neo-btn-primary" id="save-answer-btn">Guardar respuesta</button>
+          <button class="neo-btn neo-btn-outline" id="close-result-btn">Cerrar</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="ruleta-history" class="ruleta-history">
+      <h3>Respuestas anteriores</h3>
+      <div id="history-list"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- SECTION: CARTA DESDE EL FUTURO                                  -->
+<!-- ============================================================= -->
+<section id="section-carta" class="page">
+  <div class="container">
+    <h2 class="section-title">Carta desde el Futuro</h2>
+    <p class="section-desc">Escribele a tu pareja como si fueras tu yo de dentro de 10 anos</p>
+
+    <div class="cartas-grid">
+      <div class="carta-card neo-card card-pink" data-who="stephania">
+        <div class="carta-header">
+          <div class="carta-avatar" style="background: var(--pink);">S</div>
+          <div>
+            <h3>Stephania desde el 2036</h3>
+            <small>Carta para Hesus</small>
+          </div>
+        </div>
+        <textarea class="neo-input carta-text" id="carta-stephania" rows="10" placeholder="Querido Hesus, han pasado 10 anos y quiero contarte como resulto todo..."></textarea>
+        <div class="carta-footer">
+          <span class="word-count" id="wc-stephania">0 palabras de amor</span>
+          <div class="carta-btns">
+            <button class="neo-btn neo-btn-primary save-carta-btn" data-who="stephania">Guardar</button>
+            <button class="neo-btn neo-btn-outline seal-carta-btn" data-who="stephania">Sellar carta</button>
+          </div>
+        </div>
+        <div class="seal-overlay hidden" id="seal-stephania">
+          <div class="wax-seal">SELLADA</div>
+        </div>
+      </div>
+
+      <div class="carta-card neo-card card-accent" data-who="hesus">
+        <div class="carta-header">
+          <div class="carta-avatar" style="background: var(--accent);">H</div>
+          <div>
+            <h3>Hesus desde el 2036</h3>
+            <small>Carta para Stephania</small>
+          </div>
+        </div>
+        <textarea class="neo-input carta-text" id="carta-hesus" rows="10" placeholder="Querida Stephania, han pasado 10 anos y quiero contarte como resulto todo..."></textarea>
+        <div class="carta-footer">
+          <span class="word-count" id="wc-hesus">0 palabras de amor</span>
+          <div class="carta-btns">
+            <button class="neo-btn neo-btn-primary save-carta-btn" data-who="hesus">Guardar</button>
+            <button class="neo-btn neo-btn-outline seal-carta-btn" data-who="hesus">Sellar carta</button>
+          </div>
+        </div>
+        <div class="seal-overlay hidden" id="seal-hesus">
+          <div class="wax-seal">SELLADA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- SECTION: SI FUERAS                                              -->
+<!-- ============================================================= -->
+<section id="section-si-fueras" class="page">
+  <div class="container">
+    <h2 class="section-title">"Si fueras..."</h2>
+    <p class="section-desc">Se turnan completando frases. Cada respuesta con su explicacion.</p>
+    <div id="si-fueras-grid" class="si-fueras-grid"></div>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- SECTION: TIMELINE                                               -->
+<!-- ============================================================= -->
+<section id="section-timeline" class="page">
+  <div class="container">
+    <h2 class="section-title">Nuestra Linea del Tiempo</h2>
+    <p class="section-desc">Reconstruyan de memoria la historia de su relacion</p>
+    <div id="timeline-container" class="timeline"></div>
+    <div class="timeline-add">
+      <button class="neo-btn neo-btn-outline" id="add-milestone-btn">+ Agregar momento</button>
+    </div>
+    <div id="add-milestone-modal" class="modal-backdrop hidden">
+      <div class="modal-dialog neo-card">
+        <div class="modal-header">
+          <h3>Agregar momento</h3>
+          <button class="modal-close" id="close-milestone-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <label class="neo-label">Fecha</label>
+          <input type="month" class="neo-input" id="milestone-date">
+          <label class="neo-label">Titulo del momento</label>
+          <input type="text" class="neo-input" id="milestone-title" placeholder="Ej: Nuestra primera cena juntos">
+        </div>
+        <div class="modal-footer">
+          <button class="neo-btn neo-btn-primary" id="save-milestone-btn">Agregar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- SECTION: CAPSULA DEL TIEMPO                                     -->
+<!-- ============================================================= -->
+<section id="section-capsula" class="page">
+  <div class="container">
+    <h2 class="section-title">Capsula del Tiempo</h2>
+    <p class="section-desc">Escriban cartas a su yo futuro. Sellenlas y elijan cuando abrirlas.</p>
+    <div class="capsulas-grid" id="capsulas-grid"></div>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- SECTION: ALBUM DE FUTUROS                                       -->
+<!-- ============================================================= -->
+<section id="section-album" class="page">
+  <div class="container">
+    <h2 class="section-title">Album de Futuros</h2>
+    <p class="section-desc">Su vision board de pareja. Todo lo que quieren vivir juntos.</p>
+    <div id="album-board" class="album-board"></div>
+    <button class="fab-btn neo-btn neo-btn-primary" id="add-dream-btn">+ Agregar sueno</button>
+
+    <div id="dream-modal" class="modal-backdrop hidden">
+      <div class="modal-dialog neo-card">
+        <div class="modal-header">
+          <h3>Nuevo sueno juntos</h3>
+          <button class="modal-close" id="close-dream-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <label class="neo-label">Categoria</label>
+          <select class="neo-input" id="dream-category">
+            <option value="viaje">Viaje</option>
+            <option value="sueno">Sueno</option>
+            <option value="meta">Meta</option>
+            <option value="otro">Otro</option>
+          </select>
+          <label class="neo-label">Titulo</label>
+          <input type="text" class="neo-input" id="dream-title" placeholder="Ej: Ir a Japon">
+          <label class="neo-label">Descripcion</label>
+          <textarea class="neo-input" id="dream-desc" rows="3" placeholder="Describe este sueno..."></textarea>
+        </div>
+        <div class="modal-footer">
+          <button class="neo-btn neo-btn-primary" id="save-dream-btn">Agregar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- SCRIPTS                                                         -->
+<!-- ============================================================= -->
+<script src="js/app.js"></script>
+<script src="js/ruleta.js"></script>
+<script src="js/carta-futuro.js"></script>
+<script src="js/si-fueras.js"></script>
+<script src="js/timeline.js"></script>
+<script src="js/capsula.js"></script>
+<script src="js/album.js"></script>
+
+</body>
+</html>
